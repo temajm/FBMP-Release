@@ -1,0 +1,20 @@
+{
+  "light": {
+    "colorBgBase": "#FFFFFF",
+    "colorError": "#FF6340",
+    "colorPrimary": "#FF1935",
+    "colorSuccess": "#67C91F",
+    "colorTextBase": "#2F3342",
+    "colorWarning": "#FA8C16",
+    "fontFamily": "TT Firs Neue",
+    "fontFamilyCode": "TT Firs Neue",
+    "fontSize": "16px",
+    "sizeStep": "2px",
+    "lineHeight": "130%",
+
+    "fontSizeHeading1": "56px",
+    "fontSizeHeading2": "38px",
+    "fontSizeHeading3": "28px",
+    "fontSizeHeading4": "24px"
+  }
+}

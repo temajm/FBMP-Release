@@ -1,0 +1,45 @@
+$width_number: 25px;
+$height_number: 25px;
+
+.date-chart-bar-list {
+  display: flex;
+  padding-right: 10px;
+
+  .text{
+    margin-left: 20px;
+    margin-top: 15px;
+    height: $width_number;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .count {
+    margin-left: 20px;
+    margin-top: 15px;
+    height: $width_number;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .numbers {
+    flex-direction: column;
+  }
+  .texts{
+    flex-direction: column;
+  }
+  .counts {
+    flex-direction: column;
+  }
+
+  .number {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:  $width_number;
+    height: $height_number;
+    background: var(--color-primary);
+    border-radius: 50%;
+    color: var(--color-text-invert);
+  }
+}

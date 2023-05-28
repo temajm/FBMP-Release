@@ -1,0 +1,41 @@
+.chart-date {
+  .title {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    .ant-tabs-ink-bar{
+      display: none;
+    }
+  }
+
+  .ant-card-body{
+    display: flex;
+    flex-direction: column;
+    .preTitle{
+      margin-bottom: 25px;
+    }
+    .content{
+      width: 100%;
+      display: flex;
+      .chart{
+        flex: 1;
+        padding-right: 30px;
+      }
+      .rate-requests{
+        @media (max-width: 800px) {
+          display: none;
+        }
+        padding-left: 10px;
+        .title {
+          display: flex;
+          justify-content: left;
+          margin-bottom: 15px;
+        }
+        .list{
+
+        }
+      }
+
+    }
+  }
+}

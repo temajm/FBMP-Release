@@ -1,0 +1,13 @@
+.input-type-line{
+  .ant-input{
+    padding-bottom: 10px !important;
+    padding-top: 0 !important;
+  }
+  .line{
+    width: 100%;
+    outline-style: solid;
+    outline-width: 1px;
+    display: inline-flex;
+    float: left;
+  }
+}

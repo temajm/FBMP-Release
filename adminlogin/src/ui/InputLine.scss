@@ -1,0 +1,15 @@
+.input-type-line{
+  box-sizing: border-box;
+  .ant-input{
+    padding-bottom: 10px !important;
+    padding-top: 0 !important;
+  }
+  .line{
+    width: 100%;
+    border-bottom-width: 1px;
+    border-top: 0;
+    border-style: solid;
+    display: inline-flex;
+    float: left;
+  }
+}

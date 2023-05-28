@@ -1,0 +1,128 @@
+@import "../../fonts/TTFirsNeue/stylesheet.scss";
+
+* {
+	font-family: TT Firs Neue;
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	position: relative;
+	width: calc(100% - 60px);
+	height: 62px;
+	padding: 0 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #000000cc;
+	gap: 50px;
+	border-bottom: 1px solid #E2E7EE;
+
+	.left {
+		height: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 50px;
+
+		.logo {
+			width: 45px;
+			height: 22.5px;
+			background-image: url('../../img/logo.svg');
+			background-color: transparent;
+			background-size: cover;
+			cursor: pointer;
+		}
+	}
+
+	.right {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 15px;
+
+		.info {
+			width: 16px;
+			height: 16px;
+			background-size: cover;
+			cursor: pointer;
+		}
+
+		.notify {
+			width: 24px;
+			height: 24px;
+			background-size: cover;
+			cursor: pointer;
+		}
+
+		.profile {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			cursor: pointer;
+
+			.profileIcon {
+				width: 24px;
+				height: 24px;
+				background-size: cover;
+				border-radius: 1000px;
+			}
+
+			.profileName {
+				@media (max-width: 1100px) {
+					font-size: 16px;
+				}
+
+				@media (max-width: 480px) {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.menus {
+		display: none;
+	}
+
+	@media (max-width: 1160px) {
+		.tabz {
+			display: none;
+			z-index: -10;
+		}
+
+		.openMenu {
+			width: 24px;
+			height: 24px;
+			cursor: pointer;
+			background-size: cover;
+		}
+
+		.menus {
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			position: absolute;
+			width: 100vw;
+			height: 100vh;
+			z-index: 1;
+			display: flex;
+
+			.fill {
+				width: 60%;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+
+			.menushka {
+				padding: 20px;
+				width: 50%;
+				background-color: white;
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+			}
+		}
+	}
+}
+

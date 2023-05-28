@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\temajm\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\temajm\\.nuget\\packages"
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+.panel-auth{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  .margin4050{
+    margin-bottom: 40px;
+    @media (max-width: 1300px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  .inputPassword{
+    .ant-input-suffix{
+      font-size: 24px;
+      padding-bottom: 10px;
+      padding-right: 8px;
+    }
+  }
+  .reset-password{
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  .eyeIcon {
+    font-size: 24px;
+    padding-bottom: 10px;
+    padding-right: 8px;
+  }
+
+  .grid{
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .content {
+    height: 100%;
+    width: 40%;
+    @media (max-width: 1300px) {
+      width: 100%;
+      align-items: center;
+    }
+    //flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    .form{
+      width: 50%;
+      margin-right: 15%;
+      @media (max-width: 1500px) {
+        margin-right: 0;
+        width: 80%;
+      }
+      max-width: 400px;
+    }
+    .title {
+      font-weight: 600 !important;
+    }
+    .logo {
+      left: 15%;
+      top: 5%;
+      position: absolute;
+      @media (max-width: 1300px) {
+        left: 5%;
+        top: 3%;
+      }
+    }
+  }
+  .prev {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    @media (max-width: 1300px) {
+      display: none;
+    }
+
+    .img {
+      position: relative;
+      background: url("./../img/preview.png");
+      width: 100%;
+      height: 100%;
+      background-size: clamp(200px, 100%, 100vh) auto;
+      background-position-x: right;
+      @media (min-width: 1800px) {
+        background: url("./../img/preview.png");
+        background-size: clamp(200px, 100%, 100vh) auto;
+        background-position-y: 75%;
+        background-position-x: right;
+        background-repeat: no-repeat;
+      }
+      @media (max-width: 1800px) or (min-width: 1921px) {
+        background: url("./../img/previewImage.png");
+        width: 100%;
+        height: 100%;
+        background-size: clamp(200px, 100%, 100vh) auto;
+        background-position-x: center;
+        background-position-y: 50%;
+        background-repeat: no-repeat;
+      }
+
+      background-repeat: no-repeat;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+
+
+
+
+.item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	height: 100%;
+	cursor: pointer;
+	transition: 0.2s ease-in;
+	border-bottom: 2px solid transparent;
+
+	@media (max-width: 1160px) {
+		justify-content: flex-start;
+	}
+
+	&:hover {
+		border-color: #F5222D;
+		box-sizing: border-box;
+		color: #F5222D;
+		
+	}
+
+	.icon {
+		width: 18px;
+		height: 18px;
+		background-size: cover;
+
+		&:hover {
+			fill: black;
+		}
+	}
+
+	.title {
+		font-size: 20px;
+		font-weight: 400;
+
+		
+	}
+}
