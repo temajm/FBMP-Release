@@ -86,8 +86,6 @@ export default class Web {
         Web._application.use("/admin/login", express.static("app/adminlogin"))
         Web._application.use("/admin/panel", express.static("app/adminpanel"))
         Web._application.use("/", express.static("app/root"))
-        const auth = await import("./methods/auth.js");
-        console.log(auth.default?.run);
         for (const methodsKey in Web._methods) {
             Web._application.post(`/api/${methodsKey}`, async(req, res) => {
                 if(req.body["method"] == null){
